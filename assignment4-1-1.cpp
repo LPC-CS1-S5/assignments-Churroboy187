@@ -28,6 +28,15 @@ int main()
              << " units = $"
              << amount_without_discount << endl;
     }
+	/**********************************
+	no need to ask previous condition
+	
+	if ( units_solc < 9)
+	else if ( units_solc < 19)
+	else if ( units_solc < 49)
+
+
+	**********************************/
     else if (units_sold >= 10 && units_sold <= 19)
     {
         cout << "Total cost for " << units_sold 
