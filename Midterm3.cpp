@@ -1,0 +1,97 @@
+#include <iostream>
+
+#include <ctime>
+
+#include <random>
+
+#include <fstream>
+
+using namespace std;
+
+// define N as 10
+
+#define N 10
+
+// getRdnum function
+
+int getRdnum()
+
+{
+
+    // return random number between 1 and 50
+
+    return 1 + rand() % 50;
+
+}
+
+// isPrime function
+
+int isPrime(int n)
+
+{
+
+    // loop from 2 to n/2
+
+    for (int i = 2; i < n / 2; i++)
+
+    {
+
+        // if factor found
+
+        if (n % i == 0)
+
+            return 0;
+
+    }
+
+    return 1;
+
+}
+
+int main()
+
+{
+
+    srand(time(0));
+
+    // open file for writing
+
+    ofstream output("primenumbers.txt");
+
+    // status check
+
+    if (!output.is_open())
+
+    {
+
+        cout << "Error opening file!!\n";
+
+        return -1;
+
+    }
+
+    // loop n times
+
+    for (int i = 0; i < N; i++)
+
+    {
+
+        // generate randum number
+
+        int num = getRdnum();
+
+        // if prime
+
+        if (isPrime(num))
+
+            // output to file
+
+            output << num << " ";
+
+    }
+
+    // close file
+
+    output.close();
+
+}
