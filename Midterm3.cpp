@@ -24,9 +24,9 @@ int getRdnum()
 
 }
 
-// isPrime function
+// isGreater function
 
-int isPrime(int n)
+int isGreater(int n)
 
 {
 
@@ -56,7 +56,7 @@ int main()
 
     // open file for writing
 
-    ofstream output("primenumbers.txt");
+    ofstream output("numbers.txt");
 
     // status check
 
@@ -80,9 +80,9 @@ int main()
 
         int num = getRdnum();
 
-        // if prime
+        // if greater
 
-        if (isPrime(num))
+        if (isGreater(num))
 
             // output to file
 
@@ -95,3 +95,4 @@ int main()
     output.close();
 
 }
+

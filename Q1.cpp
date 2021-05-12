@@ -1,0 +1,44 @@
+#include <iostream>
+void swapTwoValues(int *n1, int *n2);
+void swapTwoValues(float *n1, float *n2);
+
+int main() {
+        
+        int a[5] = {1,2,3,4,5};
+        // swapping two integers
+        swapTwoValues(&a[2], &a[3]);
+        
+        // printing integer arrays
+        for(int i=0;i<5;i++){
+                printf("%d ",a[i]);
+        }
+        
+        printf("\n");
+        
+        float b[5] = {5,4,3,2,1};
+        
+        //swapping two floats
+        swapTwoValues(&b[2], &b[3]);
+        
+        // printing float arrays
+        for(int i=0;i<5;i++){
+                printf("%f ",b[i]);
+        }
+        
+        return 1;
+}
+
+void swapTwoValues(int *n1, int *n2) {
+        // swapping two integer numbers using pointers
+        int temp = *n1;
+        *n1 = *n2;
+        *n2 = temp;     
+}
+
+void swapTwoValues(float *n1, float *n2) {      
+        // swapping two float numbers using pointers
+        float temp = *n1;
+        *n1 = *n2;
+        *n2 = temp;
+        
+}
