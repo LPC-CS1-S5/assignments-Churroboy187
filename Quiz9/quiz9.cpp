@@ -18,4 +18,9 @@ int maxlnfemployee e[], int size {
 
   return maxlnd;
 }
- return maxlnd;
+ int main (){
+   // enter 10 employee details
+   employees e[10];
+   int i, size = 10;
+   
+ }
