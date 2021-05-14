@@ -20,8 +20,8 @@ int maxInd(employee e[], int size) {
 
  int main (){
    // enter 10 employee details
-   employees e[5];
-   int i, size = 5;
+   employee e[10];
+   int i, size = 10;
    for (i = 0; i < size; ++i) {
     printf("Enter Employee %d details\n", i+1);
     printf("Id: ");
@@ -35,6 +35,6 @@ int maxInd(employee e[], int size) {
    }
   //Print max employee
   i = maxInd(e, size);
-  printf("Employee with highest salary is: %s with id: %d, age: %d and salary of: $%f\n", e[i].name, e[i].id, e[i].age, e[i].salary);
+  printf("Employee with highest salary is: %s with id: %d, age: %d and salary of: $%f\n", e[i].id, e[i].age, e[i].salary);
   retrun 0;
  }
