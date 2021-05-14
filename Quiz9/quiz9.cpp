@@ -23,8 +23,13 @@ int maxInd(employee e[], int size) {
    employees e[10];
    int i, size = 10;
    for (i = 0; i < size; ++i) {
-
-     
+    printf("Enter Employee %d details\n", i+1);
+    printf("Id: ");
+    scanf("%d",& (e[i].id))
+    printf
+    scanf
+    printf
+    scanf
    }
 
  }
