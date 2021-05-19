@@ -20,4 +20,11 @@ bool isSubset(int arr1[], int arr2[]
    return 1;
 }
 
-int main
+int main()
+{
+   int arr1[] = { 1, 3, 5, 9, 10 };
+   int arr2[] = { 1, 2, 3, 5, 9, 10, 11, 13, 15, 17 };
+};
+
+  int m = sizeof(arr1) / sizeof(arr1[0]);
+  int n = sizeof(arr2) / sizeof(arr2[0]);
