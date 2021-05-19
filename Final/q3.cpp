@@ -24,7 +24,14 @@ int main()
 {
    int arr1[] = { 1, 3, 5, 9, 10 };
    int arr2[] = { 1, 2, 3, 5, 9, 10, 11, 13, 15, 17 };
-};
 
-  int m = sizeof(arr1) / sizeof(arr1[0]);
-  int n = sizeof(arr2) / sizeof(arr2[0]);
+   int m = sizeof(arr1) / sizeof(arr1[0]);
+   int n = sizeof(arr2) / sizeof(arr2[0]);
+
+   if (isSubset(arr1, arr2, m, n))
+       printf("Numbers1 is subset of Numbers2 ");
+    else
+      printf("Numbers1 is not a subset of Numbers2 ");
+}
+
+  
