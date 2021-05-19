@@ -1,8 +1,7 @@
-
-
-
-
-
+#include <iostream>
+#include <fstream>
+#include <cstring>
+using namespace std;
 
 const unsigned short N=5;
 struct Scores{     
