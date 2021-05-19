@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 
-bool isSubset(int arr1[], int arr2[]
+bool isSubset(int arr1[], int arr2[],
               int m, int n)
 {
    int i = 0;
@@ -32,6 +32,7 @@ int main()
        printf("Numbers1 is subset of Numbers2 ");
     else
       printf("Numbers1 is not a subset of Numbers2 ");
-}
 
-  
+  getchar();
+  return 0;
+}  
